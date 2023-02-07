@@ -10,5 +10,3 @@ yarn
 
 # run the application
 yarn start
-
-image.png
