@@ -4,6 +4,7 @@ This project is to create a responsive image grid.
 
 Use Yarn as the package manager.
 
+```
 # install dependencies
 yarn
 

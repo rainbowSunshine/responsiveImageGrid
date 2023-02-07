@@ -1,28 +1,47 @@
 .imageGrid {
   margin-right: 40vw;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: calc(
+    ( 60vw - ((10px + 10px) * 2)
+    ) / 3
+  ) 
+  calc(
+    ( 60vw - ((10px + 10px) * 2)
+    ) / 3
+  )
+  calc(
+    ( 60vw - ((10px + 10px) * 2)
+    ) / 3
+  );
   gap: 10px;
   background-color: #fff;
   padding: 10px;
-  /* This is the calculation for the row height.    */
+  /* This is the calculation for the row height.   */
   grid-auto-rows: calc(
-    ( 50vw - (10px * 2)
+    ( 60vw - ((10px + 10px) * 2)
     ) / 3
   );
+  box-sizing: border-box;
 }
 
 .imageGrid > div {
   background-color: #8ca0ff;
-  /* background-color: rgba(255, 255, 255, 0.8); */
   text-align: center;
   padding: 0px;
-  font-size: 30px;
+  /* font-size: 30px; */
+  box-sizing: border-box;
 }
+
+/* .imageGrid > div:active{
+  border: solid;
+  border-width: 5px;
+  border-color: green;
+} */
 
 .greenBorder{
   border: solid;
   border-width: 5px;
   border-color: green;
+  box-sizing: border-box;
 }
 
