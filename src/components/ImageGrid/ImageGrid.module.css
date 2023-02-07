@@ -1,0 +1,28 @@
+.imageGrid {
+  margin-right: 40vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+  /* This is the calculation for the row height.    */
+  grid-auto-rows: calc(
+    ( 50vw - (10px * 2)
+    ) / 3
+  );
+}
+
+.imageGrid > div {
+  background-color: #8ca0ff;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 0px;
+  font-size: 30px;
+}
+
+.greenBorder{
+  border: solid;
+  border-width: 5px;
+  border-color: green;
+}
+
